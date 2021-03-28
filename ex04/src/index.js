@@ -5,20 +5,22 @@ class Pets{
         this._legs=legs;
     }
         walk(){
-            let numberOfLegs= 4;
-            return this._name "is walking on" numberOfLegs "legs");
+            let numberOfLegs= `${this._name} is walking on ${this._legs} legs`
+            return numberOfLegs;
         
         }
 }
 class Dog extends Pets{
-super(name,legs)
+    constructor(name, legs){
+super(name,legs);
+    }
 bark(){
-    let dogSay= "WAUF-WAUF";
-    return this._name "says" dogSay ;
+    let dogSay= `${this._name} says WUF-WUF`;
+    return dogSay ;
 }
 
 }
-console.log(numberOfLegs,dogSay);
+
 
 // Only change code above this line
 
